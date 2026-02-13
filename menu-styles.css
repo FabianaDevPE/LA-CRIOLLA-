@@ -1,0 +1,690 @@
+/* ========================
+   MENU PAGE STYLES - VERSIÓN ULTRA ESPECÍFICA
+   Diseñado para La Criolla
+   Con máxima especificidad para sobrescribir TODOS los estilos
+   ======================== */
+
+/* Menu Hero Section */
+.menu-hero {
+	width: 100%;
+	height: 60vh;
+	min-height: 450px;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.7)
+	),
+	url('images/menu-hero-bg.jpg') center/cover no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+
+.menu-hero .global-headline {
+	margin-top: 3.9rem;
+}
+
+/* Menu Navigation Tabs */
+.menu-navigation {
+	background-color: #1a1a1a !important;
+	padding: 3rem 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.menu-tabs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+button.menu-tab {
+	background: transparent !important;
+	border: 2px solid #d4af37 !important;
+	color: #fff !important;
+	padding: 1rem 2.5rem !important;
+	font-size: 1.3rem !important;
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 500 !important;
+	text-transform: uppercase !important;
+	letter-spacing: 2px !important;
+	cursor: pointer !important;
+	transition: all 0.5s ease !important;
+	border-radius: 0.4rem !important;
+}
+
+button.menu-tab:hover {
+	background-color: #d4af37 !important;
+	color: #fff !important;
+	transform: translateY(-3px);
+	box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+button.menu-tab.active {
+	background-color: #d4af37 !important;
+	color: #fff !important;
+	box-shadow: 0 5px 20px rgba(212, 175, 55, 0.5);
+}
+
+/* Menu Content */
+section.menu-content {
+	padding: 8rem 0 !important;
+	background-color: #0a0a0a !important;
+	color: #fff !important;
+}
+
+.menu-category {
+	display: none;
+	animation: fadeIn 0.5s ease;
+}
+
+.menu-category.active {
+	display: block !important;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.menu-category .category-header {
+	text-align: center;
+	margin-bottom: 6rem;
+}
+
+.menu-category .category-header .sub-headline {
+	font-size: 8.5rem !important;
+	font-family: "Playfair Display", serif !important;
+	color: #d4af37 !important;
+	margin-bottom: 1rem;
+	font-weight: 100 !important;
+}
+
+.menu-category .category-header .seperator {
+	margin: 3rem auto;
+}
+
+/* Menu Items Container */
+.menu-category .menu-items {
+	max-width: 900px;
+	margin: 0 auto;
+	display: grid;
+	gap: 4rem;
+}
+
+/* Cada item del menú - MÁXIMA ESPECIFICIDAD */
+section.menu-content .menu-category.active .menu-items .menu-item {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+	padding-bottom: 3rem !important;
+	transition: all 0.5s ease;
+	position: relative;
+	display: block !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+section.menu-content .menu-category.active .menu-items .menu-item:last-child {
+	border-bottom: none !important;
+}
+
+section.menu-content .menu-category.active .menu-items .menu-item:hover {
+	transform: translateX(10px);
+	border-bottom-color: #d4af37 !important;
+}
+
+/* Header del item (título + precio) */
+section.menu-content .menu-category.active .menu-items .menu-item .menu-item-header {
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: baseline !important;
+	margin-bottom: 1.5rem !important;
+	gap: 2rem !important;
+}
+
+/* TÍTULOS DE PLATILLOS - ULTRA ESPECÍFICO */
+section.menu-content .menu-category.active .menu-items .menu-item .menu-item-header h3 {
+	font-family: "Playfair Display", serif !important;
+	font-size: 2.2rem !important;
+	font-weight: 700 !important;
+	color: #ffffff !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.3rem !important;
+	flex: 1 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: 1.2 !important;
+	display: block !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+/* PRECIOS - ULTRA ESPECÍFICO */
+section.menu-content .menu-category.active .menu-items .menu-item .menu-item-header .price {
+	font-family: "Playfair Display", serif !important;
+	font-size: 2.4rem !important;
+	font-weight: 700 !important;
+	color: #d4af37 !important;
+	white-space: nowrap !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: inline-block !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+/* DESCRIPCIONES - ULTRA ESPECÍFICO */
+section.menu-content .menu-category.active .menu-items .menu-item .menu-item-description,
+section.menu-content .menu-category.active .menu-items .menu-item p.menu-item-description {
+	font-family: "Poppins", sans-serif !important;
+	font-size: 1.5rem !important;
+	line-height: 1.8 !important;
+	color: #ffffff !important;
+	opacity: 0.9 !important;
+	padding-left: 0.5rem !important;
+	margin: 0 !important;
+	display: block !important;
+	visibility: visible !important;
+}
+
+/* Menu Badges */
+section.menu-content .menu-category .menu-items .menu-item .menu-badge,
+section.menu-content .menu-category .menu-items .menu-item span.menu-badge {
+	display: inline-block !important;
+	background-color: #d4af37 !important;
+	color: #fff !important;
+	padding: 0.5rem 1.5rem !important;
+	font-size: 1.1rem !important;
+	font-weight: 600 !important;
+	text-transform: uppercase !important;
+	letter-spacing: 0.2rem !important;
+	border-radius: 0.4rem !important;
+	margin-top: 1rem !important;
+	font-family: "Poppins", sans-serif !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+section.menu-content .menu-category .menu-items .menu-item .menu-badge.spicy,
+section.menu-content .menu-category .menu-items .menu-item span.menu-badge.spicy {
+	background-color: #e74c3c !important;
+}
+
+/* Menu CTA Section */
+section.menu-cta {
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.8)
+	),
+	url('images/restaurant-bg.jpg') center/cover no-repeat fixed;
+	padding: 10rem 0 !important;
+	text-align: center;
+	min-height: 50vh;
+	display: flex;
+	align-items: center;
+}
+
+section.menu-cta .global-headline {
+	margin-bottom: 0;
+}
+
+section.menu-cta .menu-cta-text,
+section.menu-cta p.menu-cta-text {
+	font-family: "Poppins", sans-serif !important;
+	font-size: 1.8rem !important;
+	color: rgba(255, 255, 255, 0.9) !important;
+	margin: 3rem 0 !important;
+	max-width: 600px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	line-height: 1.6 !important;
+	letter-spacing: 1px !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+	.menu-hero {
+		height: 40vh;
+		min-height: 300px;
+	}
+	
+	.menu-tabs {
+		gap: 1rem;
+		padding: 0 1rem;
+	}
+	
+	button.menu-tab {
+		padding: 0.8rem 1.5rem !important;
+		font-size: 1.1rem !important;
+	}
+	
+	section.menu-content {
+		padding: 5rem 0 !important;
+	}
+	
+	.menu-category .category-header {
+		margin-bottom: 4rem;
+	}
+	
+	.menu-category .category-header .sub-headline {
+		font-size: 6rem !important;
+	}
+	
+	.menu-category .menu-items {
+		gap: 3rem;
+		padding: 0 2rem;
+	}
+	
+	section.menu-content .menu-category.active .menu-items .menu-item .menu-item-header {
+		flex-direction: column !important;
+		align-items: flex-start !important;
+		gap: 0.5rem !important;
+	}
+	
+	section.menu-content .menu-category.active .menu-items .menu-item .menu-item-header h3 {
+		font-size: 1.9rem !important;
+	}
+	
+	section.menu-content .menu-category.active .menu-items .menu-item .menu-item-header .price {
+		font-size: 2rem !important;
+	}
+	
+	section.menu-content .menu-category.active .menu-items .menu-item .menu-item-description,
+	section.menu-content .menu-category.active .menu-items .menu-item p.menu-item-description {
+		font-size: 1.4rem !important;
+	}
+	
+	section.menu-content .menu-category.active .menu-items .menu-item:hover {
+		transform: none;
+	}
+	
+	section.menu-cta {
+		padding: 7rem 0 !important;
+	}
+	
+	section.menu-cta .menu-cta-text,
+	section.menu-cta p.menu-cta-text {
+		font-size: 1.6rem !important;
+		padding: 0 2rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	button.menu-tab {
+		padding: 0.7rem 1.2rem !important;
+		font-size: 1rem !important;
+	}
+	
+	.menu-category .category-header .sub-headline {
+		font-size: 5rem !important;
+	}
+	
+	section.menu-content .menu-category.active .menu-items .menu-item .menu-item-header h3 {
+		font-size: 1.7rem !important;
+	}
+	
+	section.menu-content .menu-category.active .menu-items .menu-item .menu-item-header .price {
+		font-size: 1.8rem !important;
+	}
+	
+	section.menu-content .menu-category.active .menu-items .menu-item .menu-item-description,
+	section.menu-content .menu-category.active .menu-items .menu-item p.menu-item-description {
+		font-size: 1.3rem !important;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	section.menu-content {
+		padding: 10rem 0 !important;
+	}
+	
+	.menu-category .category-header .sub-headline {
+		font-size: 10rem !important;
+	}
+	
+	button.menu-tab {
+		font-size: 1.3rem !important;
+	}
+}
+
+/* Animation Classes */
+.animate-left,
+.animate-right,
+.animate-top,
+.animate-bottom {
+	opacity: 0;
+}
+
+.animate-left.show {
+	animation: slideInLeft 0.8s ease forwards;
+}
+
+.animate-right.show {
+	animation: slideInRight 0.8s ease forwards;
+}
+
+.animate-top.show {
+	animation: slideInTop 0.8s ease forwards;
+}
+
+.animate-bottom.show {
+	animation: slideInBottom 0.8s ease forwards;
+}
+
+@keyframes slideInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInTop {
+	from {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInBottom {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* REGLA FINAL DE EMERGENCIA - Sobrescribe TODO */
+body section.menu-content .container .menu-category.active .menu-items .menu-item h3,
+body section.menu-content .container .menu-category.active .menu-items .menu-item .menu-item-header h3 {
+	color: #ffffff !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+body section.menu-content .container .menu-category.active .menu-items .menu-item .price,
+body section.menu-content .container .menu-category.active .menu-items .menu-item .menu-item-header .price {
+	color: #d4af37 !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+body section.menu-content .container .menu-category.active .menu-items .menu-item p,
+body section.menu-content .container .menu-category.active .menu-items .menu-item .menu-item-description {
+	color: #ffffff !important;
+	opacity: 0.9 !important;
+	visibility: visible !important;
+}
+
+/* FORZAR VISIBILIDAD DE HEADERS DE CATEGORÍA - CRÍTICO */
+.menu-category#entradas .category-header .sub-headline,
+.menu-category#principales .category-header .sub-headline,
+.menu-category#ceviches .category-header .sub-headline,
+.menu-category#postres .category-header .sub-headline,
+.menu-category#bebidas .category-header .sub-headline {
+	color: #d4af37 !important;
+	font-size: 8.5rem !important;
+	font-family: "Playfair Display", serif !important;
+	font-weight: 100 !important;
+	text-align: center !important;
+	display: block !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+	margin-bottom: 1rem !important;
+}
+
+.menu-category#entradas .category-header,
+.menu-category#principales .category-header,
+.menu-category#ceviches .category-header,
+.menu-category#postres .category-header,
+.menu-category#bebidas .category-header {
+	text-align: center !important;
+	margin-bottom: 6rem !important;
+	display: block !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+/* Forzar first-letter en headers */
+.menu-category .category-header .sub-headline .first-letter {
+	font-size: 10.3rem !important;
+	color: #d4af37 !important;
+	text-transform: uppercase !important;
+}
+
+/* Asegurar que el separador sea visible */
+.menu-category .category-header .seperator {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	margin: 3rem auto !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+.menu-category .category-header .seperator .line {
+	width: 100%;
+	max-width: 8.4rem;
+	height: 0.25rem;
+	background-color: #fff !important;
+	display: block !important;
+	opacity: 1 !important;
+}
+
+.menu-category .category-header .seperator .asterisk {
+	font-size: 1.2rem !important;
+	color: #d4af37 !important;
+	margin: 0 1.6rem !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+.menu-category .category-header .seperator .asterisk i {
+	color: #d4af37 !important;
+	opacity: 1 !important;
+}
+
+.menu-hero {
+       background: linear-gradient(
+           to bottom,
+           rgba(0, 0, 0, 0.6),
+           rgba(0, 0, 0, 0.7)
+       ),
+       url('images/Fondo-Menu.jpg') center/cover no-repeat;
+   }
+
+section.menu-cta {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.8)
+    ),
+    url('/images/Fondo-Reserva-Menu.jpg') center/cover no-repeat fixed;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* ========================================
+   FOOTER - Forzar estilos correctos
+   ======================================== */
+
+footer.footer {
+    padding: 7.9rem 0 !important;
+    background-color: #121212 !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.footer .back-to-top {
+    width: 7rem;
+    height: 7rem;
+    background-color: #121212 !important;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.footer .back-to-top i {
+    display: block !important;
+    color: #fff !important;
+    font-size: 2rem !important;
+    padding: 2rem;
+}
+
+.footer .footer-content {
+    overflow: hidden;
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.footer .footer-content h4 {
+    font-size: 1.9rem !important;
+    text-transform: uppercase !important;
+    font-weight: 100 !important;
+    letter-spacing: 3px !important;
+    margin-bottom: 3rem !important;
+    color: #fff !important;
+}
+
+.footer .footer-content .asterisk {
+    margin: 2.4rem 0 !important;
+    color: #d4af37 !important;
+    font-size: 1.2rem !important;
+}
+
+.footer .footer-content .asterisk i {
+    color: #d4af37 !important;
+}
+
+.footer .footer-content-about {
+    margin-bottom: 5.4rem;
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.footer .footer-content-about p {
+    line-height: 2 !important;
+    color: #fff !important;
+    opacity: 0.9 !important;
+}
+
+.footer .social-icons {
+    list-style-type: none !important;
+    margin-bottom: 5.4rem !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.footer .social-icons li {
+    display: inline-block !important;
+}
+
+.footer .social-icons i {
+    font-size: 2rem !important;
+    color: #fff !important;
+    padding: 0.8rem 2rem !important;
+    opacity: 0.5 !important;
+    transition: color 0.5s !important;
+}
+
+.footer .social-icons i:hover,
+.footer .social-icons i:focus {
+    color: #d4af37 !important;
+    opacity: 1 !important;
+}
+
+.footer .newsletter-form {
+    width: 100% !important;
+    position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.footer .newsletter-input {
+    width: 100% !important;
+    max-width: 25rem !important;
+    padding: 1rem !important;
+    border-radius: 0.4rem !important;
+    border: none !important;
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+.footer .newsletter-btn {
+    background-color: transparent !important;
+    border: none !important;
+    color: #d4af37 !important;
+    cursor: pointer !important;
+    font-size: 1.6rem !important;
+    padding: 1px 0.6rem !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin-left: 10.5rem !important;
+}
+
+.footer .footer-content-divider {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+}
+
+.footer .social-media,
+.footer .newsletter-container {
+    flex: 1 !important;
+    min-width: 250px !important;
+    margin: 0 1rem !important;
+}
+
+/* Responsive para footer */
+@media screen and (max-width: 768px) {
+    .footer .footer-content-divider {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .footer .social-media,
+    .footer .newsletter-container {
+        width: 100% !important;
+        margin: 2rem 0 !important;
+    }
+}
